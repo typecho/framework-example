@@ -1,0 +1,3 @@
+[submodule "lib/framework"]
+	path = lib/framework
+	url = https://github.com/typecho/framework.git
