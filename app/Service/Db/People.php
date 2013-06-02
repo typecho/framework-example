@@ -39,7 +39,7 @@ class People extends AbstractTable
      */
     public function listNewest($page, $pageSize)
     {
-        return $this->listBy(array(), $page, $pageSize, array('created', 'DESC'));
+        return $this->listBy(array(), $page, $pageSize, array('created' => 'DESC'));
 
         // 更复杂的查询可以直接用serviceDb构建sql, 比如
         return $this->serviceDb->select('people')
